@@ -123,18 +123,58 @@ section{
 }
 /* Hero Style End */
 
-/* What we do sections */
-.intro {
-    text-align: center;
-}
-
-.intro h2 {
+/* apply for all what we do, what you do, etc sections */
+.section-title {
     font-size: 55px;
     color: #024e76;
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
-    border-bottom: 3px solid #fce138;
     display: inline-block;
+    border-bottom: 3px solid;
+}
+
+.primary-border {
+    border-color: #fce138;
+}
+
+.secondary-border {
+    border-color: #39a6b2;
+}
+
+.steps {
+    /* text-aligns centers text and images, but if you want images to be centered it has to be applied to the image's parent element, not the image itself */
+    text-align: center;
+    background: #fce138;
+}
+
+.steps div {
+    margin-bottom: 80px;
+}
+
+.steps img {
+    width: 15%;
+    margin: 10px 0;
+}
+
+.steps h3 {
+    color: #024e76;
+    font-size: 46px;
+    margin-top: 10px;
+}
+
+.steps p {
+    color: #39a6b2;
+    font-size: 23px;
+}
+
+.steps span {
+    font-size: 38px;
+}
+/* apply all section ends */
+
+/* What we do section starts*/
+.intro {
+    text-align: center;
 }
 
 .intro p {
@@ -145,3 +185,6 @@ section{
     /* marging: 0 auto can be used to center text when the width is less than 100% */
     margin: 0 auto; 
 }
+/* What we do section ends */
+
+/* What you do section starts */
