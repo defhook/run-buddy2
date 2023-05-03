@@ -12,6 +12,12 @@ body {
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
+    /* This allows for layout to be placed on flexable screen */
+    display: flex;
+    /* This addresses how the property declarations will be displayed */
+    justify-content: space-between;
+    /* This will address how the values move, if they get smaller or content wraps to next row/column. */
+    flex-wrap: wrap;
 }
 
 header h1 {
@@ -29,7 +35,7 @@ header a {
 }
 
 header nav {
-    float: right;
+    
     margin: 7px 0;
 }
 
