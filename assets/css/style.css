@@ -39,14 +39,21 @@ header nav {
     margin: 7px 0;
 }
 
-header nav ul li {
-    display: inline;
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items follows the vertical axis(cross axis) */
+    align-items: center;
+    /* list-style sets how a list item is styled (bullet points, dashes, etc) and positioned indented or outdented */
+    list-style: none;
 }
 
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    /* VW stands for viewport width. Viewport is the actual browser window size */
+    font-size: 1.5vw;
 }
 
 /* Footer */
