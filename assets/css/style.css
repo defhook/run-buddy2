@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-/* the * is selectiong is saying "select all elements that are direct children of anything with a class of contact-info. The > means it's looking specifically for direct children of the element listed first." */
-.contact-info > * {
-    flex: 1;
-    margin: 15px;
-}
-
-
 body {
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
@@ -32,7 +25,6 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    display: inline;
 }
 
 header a {
@@ -42,7 +34,6 @@ header a {
 }
 
 header nav {
-    
     margin: 7px 0;
 }
 
@@ -62,11 +53,12 @@ header nav ul li a {
     /* VW stands for viewport width. Viewport is the actual browser window size */
     font-size: 1.5vw;
 }
+/* header/nav styles end */
 
-/* Footer */
+/* Footer styles start*/
 footer {
     background: #fce138;
-    width: 100;
+    width: 100%;
     padding: 40px 35px;
     display: flex;
     justify-content: space-between;
@@ -87,7 +79,10 @@ footer div {
 footer a {
     color: #024e76;
 }
+/* End footer styles */
 
+
+/* Style all section tags */
 section{
     padding: 60px;
 }
@@ -118,7 +113,6 @@ section{
 }
 
 .hero-form {
-    color: #024e76;
     background-color: #fce138;
     padding: 20px;
     border: solid 3px #024e76;
@@ -177,6 +171,21 @@ section{
     border-color: #39a6b2;
 }
 
+/* Section title styles end */
+
+/* What we do section starts*/
+.intro p {
+    line-height: 1.7;
+    color: #39a6b2;
+    width: 80%;
+    font-size: 20px;
+    /* marging: 0 auto can be used to center text when the width is less than 100% */
+    margin: 0 auto; 
+    text-align: center;
+}
+/* What we do section ends */
+
+/* What you do styles start */
 .step {
     margin: 50px auto;
     padding-bottom: 50px;
@@ -201,27 +210,12 @@ section{
     flex: 1 30%;
 }
 
-.step-text {
-    flex: 12;
-}
-
-.step-text p {
-    color: #39a6b2;
-    font-size: 18px;
-}
-
 .step-info {
     /* This means it will be at least 70% but will receive any extra space in the container at a 2-to-1 ratio */
     flex: 2 70%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-}
-
-.step-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color: #024e76;
 }
 
 .step-img {
@@ -233,25 +227,26 @@ section{
 .step-img img {
     max-width: 100%;
 }
-/* apply all section ends */
 
-/* What we do section starts*/
-
-
-.intro p {
-    line-height: 1.7;
-    color: #39a6b2;
-    width: 80%;
-    font-size: 20px;
-    /* marging: 0 auto can be used to center text when the width is less than 100% */
-    margin: 0 auto; 
-    text-align: center;
+.step-text {
+    flex: 12;
 }
-/* What we do section ends */
 
-/* What you do section starts */
+.step-text p {
+    color: #39a6b2;
+    font-size: 18px;
+}
 
-/* Meet the trainers section */
+.step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
+}
+
+/* What you do style ends */
+
+
+/* Meet the trainers section begins*/
 .trainers {
     width: 100%;
     margin: 0 auto;
@@ -290,14 +285,28 @@ section{
     font-size: 17px;
 }
 
+/* Trainer section ends */
+
+
 /* Reach out styles start */
 .contact {
-    
     background: #024e76;
 }
 
 .contact h2 {
     color: #fce138;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* the * is selectiong is saying "select all elements that are direct children of anything with a class of contact-info. The > means it's looking specifically for direct children of the element listed first." */
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
 }
 
 .contact-info iframe {
@@ -341,18 +350,13 @@ section{
     font-size: 16px;
 }
 
-.contact-info {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-
 .contact-info a {
     color: #fce138;
 }
+
 /* Reach out style ends */
 
+/* Utilities */
 .text-left {
     text-align: left;
 }
